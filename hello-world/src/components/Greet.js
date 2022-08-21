@@ -7,6 +7,15 @@ import React from "react";
 // import { Greet } from "./components/Greet";
 // export const Greet = () => <h1>Hello Hubert</h1>
 
-const Greet = () => <h1>Hello Hubert</h1>
+const Greet = (props) => {
+    const {name, title} = props;
+
+    return (
+        <div>
+            <h1>Hello {name} a.k.a {title}</h1>
+            {props.children}
+        </div>
+    )
+}
 
 export default Greet;
