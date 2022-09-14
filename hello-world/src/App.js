@@ -1,11 +1,13 @@
 import './App.css';
-import RefsDemo from "./components/RefsDemo";
+// import RefsDemo from "./components/RefsDemo";
+import FocusInput from "./components/FocusInput";
 
 
 function App() {
     return (
         <div className="App">
-            <RefsDemo />
+            {/*<RefsDemo />*/}
+            <FocusInput />
         </div>
     );
 }
